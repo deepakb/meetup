@@ -42,3 +42,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.navbar-brand {
+  padding-left: 10px;
+}
