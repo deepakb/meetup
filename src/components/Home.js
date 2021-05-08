@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 
 import Notification from '../components/Notification';
