@@ -1,0 +1,44 @@
+.header h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.centerSpinner {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.smlCountCard {
+  padding-top: 10px;
+}
+
+.smlCountCard .title {
+  text-align: center;
+}
+
+.searchResult {
+  padding-top: 20px;
+}
+
+.resgisterForm {
+  padding-top: 20px;
+}
+
+.resgisterForm .button {
+  padding-top: 10px;
+}
+
+.resgisterForm label {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.loginForm {
+  padding-top: 20px;
+}
+
+.loginForm input, .loginForm button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
