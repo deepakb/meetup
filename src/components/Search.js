@@ -1,12 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 
 import { users } from '../configs/config';
-import { SearchContext } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/SearchContext';
 
 export default function Search() {
 	const [searchString, setSearchString] = useState('');
-	const { setFilterUsers } = useContext(SearchContext);
+	const { setFilterUsers } = useSearch();
 
 	const handleChange = (e) => {
 		const searchString = e.target.value;

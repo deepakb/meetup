@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Card } from 'react-bootstrap';
 
 import Search from './Search';
 import UserList from './UserList';
-import { SearchContext } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/SearchContext';
 
 export default function Admin() {
-	const { filterUsers } = useContext(SearchContext);
+	const { filterUsers } = useSearch();
 
 	return (
 		<>

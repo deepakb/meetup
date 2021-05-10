@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Table, NavLink, Alert } from 'react-bootstrap';
 
-import { SearchContext } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/SearchContext';
 
 export default function UserList() {
-	const { filterUsers } = useContext(SearchContext);
+	const { filterUsers } = useSearch();
 
 	return (
 		<>

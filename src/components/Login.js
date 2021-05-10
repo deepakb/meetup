@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Row, Form, FormControl, Button, Card, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function Login() {
-	const { setCurrentUser } = useContext(AuthContext);
+	const { setCurrentUser } = useAuth();
 	const history = useHistory();
 
 	const handleLogin = (e) => {

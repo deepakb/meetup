@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function NavBar() {
-	const { currentUser, setCurrentUser } = useContext(AuthContext);
+	const { currentUser, setCurrentUser } = useAuth();
 	const history = useHistory();
 
 	const handleLogout = (e) => {
